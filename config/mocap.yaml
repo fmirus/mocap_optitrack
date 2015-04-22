@@ -8,4 +8,9 @@ rigid_bodies:
         pose2d: calibration_tool/ground_pose
         child_frame_id: calibration_tool
         parent_frame_id: optitrack_frame
+    '2':
+        pose: calibration_tool/robot_pose
+        pose2d: calibration_tool/robot_ground_pose
+        child_frame_id: robot
+        parent_frame_id: optitrack_frame
 
