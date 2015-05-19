@@ -3,14 +3,23 @@
 # Identifier corresponds to Trackable ID set in Tracking Tools
 #
 rigid_bodies:
-    '1':
-        pose: calibration_tool/pose
-        pose2d: calibration_tool/ground_pose
-        child_frame_id: calibration_tool
+    '11':
+        pose: calibration_tool_station1/pose
+        pose2d: calibration_tool_station1/ground_pose
+        child_frame_id: calibration_tool_station1
         parent_frame_id: optitrack_frame
-    '2':
-        pose: calibration_tool/robot_pose
-        pose2d: calibration_tool/robot_ground_pose
-        child_frame_id: robot
+    '12':
+        pose: optitrack_robot_station1/pose
+        pose2d: optitrack_robot_station1/ground_pose
+        child_frame_id: robot_station1
         parent_frame_id: optitrack_frame
-
+    '21':
+        pose: calibration_tool_station2/pose
+        pose2d: calibration_tool_station2/ground_pose
+        child_frame_id: calibration_tool_station2
+        parent_frame_id: optitrack_frame
+    '22':
+        pose: optitrack_robot_station2/pose
+        pose2d: optitrack_robot_station2/ground_pose
+        child_frame_id: robot_station2
+        parent_frame_id: optitrack_frame
